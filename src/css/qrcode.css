@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    min-height: 100vh;
+    align-items: center;
+    background: tomato;
+    justify-content: center;
+}
+
+
+
+.qrcode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height:100%;
+    border-radius: 15px;
+    background-color: beige;
+}
+.qrcode-teks {
+    text-align: center;
+    margin: 1em;
+}
+.qrcode-teks header {
+    color: tomato;
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header img{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+header img:hover{
+    transform: scale(1.2);
+}
+
+.qrcode-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 232px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 1em;
+    color: tomato;
+}
+input::placeholder {
+    color: rgba(255, 99, 71, 0.454);
+}
+input:focus {
+    outline: 1px solid tomato;
+}
+.btn-clear {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: transparent;
+}
+.btn-clear:hover, .btn-clear:focus, .btn-clear:active {
+    transform: scale(1.2);
+    color: #c35441;
+}
+
+.btn-input {
+    border: none;
+    background-color: tomato;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btn-input:hover, .btn-input:focus, .btn-input:active {
+    background-color: #c35441;
+}
+#canvas-qr {
+    border: 1.5px solid tomato;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 1px rgba(255, 99, 71, 0.548);
+    margin: 4px;
+    width: 276px;
+    height: 276px;
+}
+
+.btn-download {
+    background-color: tomato;
+    color: white;
+    border: none;
+    width: 232px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0.5em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-download:hover {
+    background-color: rgb(213, 72, 47);
+}
+
+@media (max-width: 576px) {
+    .qrcode {
+        width: 80%;
+        height: 100%;
+    }
+}

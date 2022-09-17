@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "qrcode": "^1.5.1",
+    "scrollreveal": "^4.0.9"
+  },
+  "name": "multi-tools",
+  "version": "1.0.0",
+  "description": "Free Multi Tools",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anggun Caksono",
+  "license": "ISC"
+}

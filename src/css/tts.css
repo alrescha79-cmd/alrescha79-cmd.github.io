@@ -1,0 +1,149 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: tomato;
+}
+
+::selection {
+    color: #fff;
+    background: tomato;
+}
+
+.wrapper {
+    width: 370px;
+    padding: 25px 30px;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper header {
+    font-size: 28px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: tomato;
+}
+.wrapper header img {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.wrapper header img:hover {
+    transform: scale(1.2);
+}
+
+.wrapper span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 5px auto;
+    background: tomato;
+}
+
+.wrapper form {
+    margin: 35px 0 20px;
+}
+
+form .row {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+form .row label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #c35441;
+}
+
+::placeholder {
+    color: #c3544181;
+}
+
+
+form .row:nth-child(2) label {
+    font-size: 17px;
+}
+
+form :where(textarea, select, button) {
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+form .row textarea {
+    resize: none;
+    height: 110px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border: 1.5px solid tomato;
+}
+
+form .row textarea::-webkit-scrollbar {
+    width: 0px;
+}
+
+form .row .outer {
+    height: 47px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: 1.5px solid tomato;
+}
+
+form .row select {
+    font-size: 14px;
+    color: tomato;
+    background: none;
+}
+
+form .row select::-webkit-scrollbar {
+    width: 8px;
+}
+
+form .row select::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+form .row select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+form button {
+    height: 52px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: tomato;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #c35441;
+}
+
+@media(max-width: 400px) {
+    .wrapper {
+        max-width: 345px;
+        width: 90%;
+    }
+}

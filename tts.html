@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Text To Speech </title>
+    <link rel="stylesheet" href="src/css/tts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header><img src="src/img/arrow-back.svg" alt="">Text To Speech</header>
+        <span></span>
+        <form action="#">
+            <div class="row">
+                <label>Enter Text</label>
+                <textarea class="input-voice" placeholder="Masukkan kata atau kalimat"></textarea>
+                
+            </div>
+            <div class="row">
+                <label>Select Voice</label>
+                <div class="outer">
+                    <select class="voice"></select>
+                </div>
+            </div>
+            <button class="btn-convert">Convert To Speech</button>
+        </form>
+    </div>
+
+    <script src="src/js/tts.js"></script>
+
+</body>
+</html>

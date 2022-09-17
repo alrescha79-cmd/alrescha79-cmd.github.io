@@ -1,0 +1,95 @@
+body{
+    background-color: tomato;
+}
+
+.kalkulator {
+    width: 350px;
+    background-color: white;
+    margin: 50px auto 0px auto;
+    padding: 10px;
+    border-radius: 15px;
+    filter: drop-shadow(0px 5px 4px rgb(223, 221, 221));
+    border: 2px solid black;
+}
+
+#layar {
+    width: 100%;
+    height: 115px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    outline: 1px solid tomato;
+    filter: drop-shadow(-10px -10px 25px #F4F7FA);
+    filter: drop-shadow(10px 10px 25px #AEAEC0);
+    font-size: 50px;
+    padding: 7px 5px;
+    text-align: right;
+    margin-top: 25px;
+}
+
+.container-tombol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tombol {
+    display: flex;
+    box-sizing: border-box;
+    width: 20%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: medium;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 5px 5px 5px;
+    box-shadow: 7px 7px 15px #3e528b69;
+    outline: none;
+    /* border: 0.1px solid black; */
+    background-color: #3e528b;
+    color: white;
+}
+
+.atas {
+    margin-top: 50px;
+}
+
+.tombol:hover {
+    background-color: rgb(157, 61, 44);
+    color: white;
+    cursor: pointer;
+}
+
+#equal {
+    flex-grow: 0.7;
+}
+#equal:hover {
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}
+
+.operator {
+    background-color:tomato;
+    color: white;
+}
+
+.jumlah {
+    background-color: #FF800B;
+}
+
+.operator:hover {
+    background-color: #1f2f5a;
+}
+
+.jumlah:hover {
+    background-color: #FF800B;
+}
+
+@media screen and (max-width: 513px) {
+    .tombol {
+        padding: 10px;
+    }
+}

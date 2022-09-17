@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Qr Code Generator</title>
+    <link rel="stylesheet" href="src/css/qrcode.css">
+</head>
+
+<body>
+    <div class="qrcode">
+        <div class="qrcode-teks">
+                <header><img src="src/img/arrow-back.svg" alt=""> Free Qr Code Generator</header>
+            <p>Generate Qr Code For Free</p>
+        </div>
+        <div class="qrcode-input">
+            <input id="input-qr" type="text" placeholder="cth : cakson.mdbgo.io " onchange="generateQR()">
+            <button class="btn-clear" onclick="clear()">×</button>
+
+            <input type="button" value="Generate" class="btn-input">
+
+        </div>
+        <canvas id="canvas-qr"></canvas>
+        <button class="btn-download" onclick="downloadQr()">Download</button>
+    </div>
+
+    <script src="src/qrcode.js"></script>
+    <script src="src/js/qrcode.js"></script>
+</body>
+
+</html>
