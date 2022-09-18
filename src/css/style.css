@@ -196,7 +196,10 @@ body {
 }
 .row-teks h2, h5{
     text-align: center;
-
+}
+.row-teks h5 b {
+    color: tomato;
+    font-size: 1.1em;
 }
 
 .row-teks header {
@@ -306,6 +309,9 @@ body {
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.1em;
 }
 .row-teks .btn:hover, .row-teks .btn:active, .row-teks .btn:focus {
     background-color: rgb(195, 84, 65);

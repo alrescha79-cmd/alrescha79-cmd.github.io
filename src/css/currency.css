@@ -23,7 +23,7 @@ body {
 }
 
 .wrapper {
-    width: 370px;
+    width: 400px;
     padding: 30px;
     border-radius: 7px;
     background: #fff;
@@ -151,4 +151,16 @@ form button {
 
 form button:hover {
     background: #b1412d;
+}
+
+/* mobile view */
+@media (max-width: 400px) {
+    .wrapper {  
+        width: 380px;
+        padding: 20px;
+    }
+    .wrapper header {
+        font-size: 24px;
+        text-align: center;
+    }
 }

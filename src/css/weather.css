@@ -121,7 +121,7 @@ header i:hover {
 }
 
 .separator::before {
-    content: "or";
+    content: "atau";
     color: tomato;
     font-size: 19px;
     padding: 0 15px;

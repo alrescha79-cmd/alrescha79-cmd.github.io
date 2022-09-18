@@ -50,14 +50,14 @@ function getExchangeRate(){
         amount.value = "1";
         amountVal = 1;
     }
-    exchangeRateTxt.innerText = "Getting exchange rate...";
+    exchangeRateTxt.innerText = "Mengkonversi...";
     let url = `https://v6.exchangerate-api.com/v6/b1bd18d194b1502644e9b968/latest/${fromCurrency.value}`;
     fetch(url).then(response => response.json()).then(result =>{
         let exchangeRate = result.conversion_rates[toCurrency.value];
         let totalExRate = (amountVal * exchangeRate).toFixed(2);
         exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value} = ${totalExRate} ${toCurrency.value}`;
     }).catch(() =>{
-        exchangeRateTxt.innerText = "Something went wrong";
+        exchangeRateTxt.innerText = "Terjadi kesalahan, silahkan coba lagi nanti";
     });
 
     var myHeaders = new Headers();
@@ -76,7 +76,7 @@ fetch("https://api.apilayer.com/exchangerates_data/convert?to=IDR&from=EUR&amoun
     exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value} = ${totalExRate} ${toCurrency.value}`;
 };
 
-// back to previous page
+// back to previous pages
 const back = document.querySelector('header img');
 
 back.addEventListener('click', () => {

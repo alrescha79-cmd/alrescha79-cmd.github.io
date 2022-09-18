@@ -40,10 +40,10 @@ function onError(error){
 }
 
 function fetchData(){
-    infoTxt.innerText = "Getting weather details...";
+    infoTxt.innerText = "Mendapatkan detail cuaca...";
     infoTxt.classList.add("pending");
     fetch(api).then(res => res.json()).then(result => weatherDetails(result)).catch(() =>{
-        infoTxt.innerText = "Something went wrong";
+        infoTxt.innerText = "Terjadi kesalahan, silahkan coba lagi";
         infoTxt.classList.replace("pending", "error");
     });
 }
@@ -51,7 +51,7 @@ function fetchData(){
 function weatherDetails(info){
     if(info.cod == "404"){
         infoTxt.classList.replace("pending", "error");
-        infoTxt.innerText = `${inputField.value} isn't a valid city name`;
+        infoTxt.innerText = `${inputField.value} Kota tidak ditemukan`;
     }else{
         const city = info.name;
         const country = info.sys.country;
