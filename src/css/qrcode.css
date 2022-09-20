@@ -72,6 +72,13 @@ input::placeholder {
 input:focus {
     outline: 1px solid tomato;
 }
+
+/* input value not empty and btn visible*/
+input:not(:placeholder-shown) + button {
+    display: block;
+}
+
+
 .btn-clear {
     position: absolute;
     top: 2px;
@@ -83,6 +90,7 @@ input:focus {
     font-size: 2em;
     font-weight: bold;
     background-color: transparent;
+    display: none;
 }
 .btn-clear:hover, .btn-clear:focus, .btn-clear:active {
     transform: scale(1.2);
