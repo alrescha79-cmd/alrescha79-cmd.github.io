@@ -378,13 +378,13 @@ body {
 
 .content-card .card-1 {
     margin: 1em;
+    display: block;
     border-radius: 10px;
     box-shadow: 2px 2px 6px 1px rgba(255, 99, 71, 0.548);
     backdrop-filter: blur(40px);
     background-color: rgba(252, 220, 180, 0.4);
     width: 45%;
 }
-
 .card-1 h2 {
     color: tomato;
 }
