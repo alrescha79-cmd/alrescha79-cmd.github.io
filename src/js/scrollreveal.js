@@ -6,7 +6,7 @@ ScrollReveal({
     reset: true,
     duration: 1000,
     delay: 200,
-    distance: '10px',
+    distance: '5px',
 });
 
 ScrollReveal().reveal('.about');

@@ -85,7 +85,7 @@ header i:hover {
     border: 1px solid tomato;
 }
 
-.input-part :where(input, button) {
+.input-part :where(input, .btn-lokasi) {
     width: 100%;
     height: 55px;
     border: none;
@@ -94,11 +94,37 @@ header i:hover {
     border-radius: 7px;
 }
 
+
 .input-part input {
     text-align: center;
     padding: 0 15px;
     color: tomato;
     border: 1px solid tomato;
+}
+
+input:not(:placeholder-shown)+ .btn-cari {
+    display: block;
+}
+
+.input-part .input-cari {
+    position: relative;
+}
+
+.input-part .btn-cari {
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    outline: none;
+    display: none;
+    transition: duration 0.7s ease;
+}
+
+.btn-cari:hover {
+    transform: scale(1.3);
+    transition: all 0.3s ease-in-out;
 }
 
 .input-part input:is(:focus, :valid) {
@@ -128,14 +154,14 @@ header i:hover {
     background: #fff;
 }
 
-.input-part button {
+.input-part .btn-lokasi {
     color: #fff;
     cursor: pointer;
     background: tomato;
     transition: 0.3s ease;
 }
 
-.input-part button:hover {
+.input-part .btn-lokasi:hover {
     background: #721c24;
 }
 
