@@ -13,4 +13,18 @@ window.addEventListener('load', () => {
     setTimeout(() => { 
         preloader.style.display = 'none';
     }, 700);
-} );
+});
+
+// scroll down
+const scrollDown = document.querySelector('.btn');
+
+scrollDown.addEventListener('click', () => {
+    window.scrollTo({
+        top: 1000,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
+
+
+

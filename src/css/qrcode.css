@@ -74,7 +74,7 @@ input:focus {
 }
 
 /* input value not empty and btn visible*/
-input:not(:placeholder-shown) + button {
+input:not(:placeholder-shown) + .btn-clear {
     display: block;
 }
 
