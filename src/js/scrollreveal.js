@@ -9,6 +9,8 @@ ScrollReveal({
     distance: '5px',
 });
 
+ScrollReveal().reveal('.wrapper');
+ScrollReveal().reveal('.header, .calendar, .days' , {delay: 700, easing: 'ease'});
 ScrollReveal().reveal('.about');
 ScrollReveal().reveal('.focus--mask', { delay: 1000, easing: 'ease-in-out' });
 ScrollReveal().reveal('.about-teks' , {delay: 500, easing: 'ease'});
