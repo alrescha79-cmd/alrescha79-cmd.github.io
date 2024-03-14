@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="./src/tw-elements/dist/js/index.min.js"></script>
+
+</head>
+<body class="selection:bg-orange-500 selection:text-white font-poppins">
+    
+    <!-- Header Start -->
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+        <div class="container">
+            <div class="relative flex items-center justify-between">
+                <div class="px-4">
+                    <a href="#home" class="block py-6 text-lg font-bold text-orange-500 hover:text-orange-700">Anggun Caksono</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+                        <span class="my-2 block h-[2px] w-[30px] bg-orange-500 origin-top-left transition duration-300 ease-in-out"></span>
+                        <span class="my-2 block h-[2px] w-[30px] bg-orange-500 transition duration-300 ease-in-out"></span>
+                        <span class="my-2 block h-[2px] w-[30px] bg-orange-500 origin-bottom-left transition duration-300 ease-in-out"></span>
+                    </button>
+    
+                    <nav id="nav-menu"
+                        class="absolute right-1 top-full hidden w-full max-w-[200px] rounded-lg bg-orange-50 py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none backdrop-blur-[0] ">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="mx-4 flex py-2 text-base text-black group-hover:text-orange-500 px-2 rounded-lg group-hover:bg-white lg:group-hover:bg-transparent mb-1">Beranda
+                                </a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="mx-4 flex py-2 text-base text-black group-hover:text-orange-500 px-2 rounded-lg group-hover:bg-white lg:group-hover:bg-transparent mb-1">Tentang Saya
+                                </a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio"
+                                    class="mx-4 flex py-2 text-base text-black group-hover:text-orange-500 px-2 rounded-lg group-hover:bg-white lg:group-hover:bg-transparent mb-1">Portfolio
+                                </a>
+                            </li>
+                            <li class="group">
+                                <a href="#keterampilan"
+                                    class="mx-4 flex py-2 text-base text-black group-hover:text-orange-500 px-2 rounded-lg group-hover:bg-white lg:group-hover:bg-transparent mb-1">Keterampilan
+                                </a>
+                            </li>
+                            <!-- <li class="group">
+                                <a href="#blog"
+                                    class="mx-4 flex py-2 text-base text-black group-hover:text-orange-500 px-2 rounded-lg md:shadow-none shadow-sm mb-1">Blog
+                                </a>
+                            </li> -->
+                            <li class="group">
+                                <a href="#contact"
+                                    class="mx-4 flex py-2 text-base text-black group-hover:text-orange-500 px-2 rounded-lg group-hover:bg-white lg:group-hover:bg-transparent mb-1">Hubungi Saya
+                                </a>
+                            </li>
+
+                <!-- dropdow start -->
+                <div class="w-36 h-10 mx-4 mt-2 lg:mt-0 ">
+                    <button id="btn-dropdown" type="button"
+                        class="text-white font-sans bg-orange-500 hover:bg-orange-700 rounded-t-lg rounded-b-lg px-2.5 py-2">Selengkapnya
+                        ▼</button>
+                    <div class="bg-orange-50 rounded-b-xl w-[200px] lg:w-40 relative -left-4 lg:-left-2">
+                        <ul id="dropdown" class="hidden mt-6 py-1">
+                            <li class="group mt-1">
+                                <a class=" group-hover:text-orange-500 py-1 rounded-lg mx-4 flex group-hover:bg-white px-2" href="https://alrescha79-cmd.github.io/aku/">Mini Portfolio</a>
+                            </li>
+                            <li class="group mt-1">
+                                <a class=" group-hover:text-orange-500 py-1 rounded-lg mx-4 flex group-hover:bg-white px-2" href="https://alrescha79-cmd.github.io/cv/">Landing Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- dropdown end -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <div>
+        <!-- hero start --> 
+    <div class="pb-20 bg-slate-200 pt-36" id="home">
+        <div class="container flex flex-wrap">
+        <div class="mx-4 md:mx-auto mt-8 self-center lg:scale-125 lg:mt-28">
+            <h1 class="text-orange-500 text-xl font-mono font-semibold ">Halo Semua, saya</h1>
+            <h1 class="font-bold font-serif text-2xl ">Anggun Caksono</h1>
+            <h2 class="font-sans">Mahasiswa | Web Desain</h2>
+            <h2 class="mt-4 font-light">Cari tahu apa yang bisa kami bantu untuk Anda.</h2>
+            <div class="flex  gap-3 scale-75 md:scale-110 justify-center">
+                <a href="src/CV-Final_Version.pdf" download="CV_Anggun_Caksono" class="mt-8 flex gap-2 w-40 h-10 outline outline-orange-500 hover:bg-orange-500 hover:text-white text-orange-500 font-semibold p-2 rounded-lg lg:scale-90"><box-icon type='solid' class="fill-current" name='file-pdf'></box-icon>Download CV</a>
+            <!-- <a href="#about" class="mt-8 block w-32 bg-orange-500 hover:bg-transparent hover:outline font-semibold hover:text-orange-500 hover:outline-orange-500 text-white p-2 rounded-lg lg:scale-90">Selengkapnya</a> -->
+
+                <!-- dropdow start -->
+                <div class=" w-36 h-[150px] mt-8 font-sans">
+                    <button id="btn-dropdown1" type="button"
+                        class="text-white bg-orange-500 hover:bg-orange-700 rounded-t-lg rounded-b-lg px-2.5 py-2">Selengkapnya ▼</button>
+                    <div id="dropdown1" class="bg-orange-50 rounded-xl py-1 mt-1 hidden">
+                        <ul  class="block">
+                            <li class="group my-1">
+                                <a class="font-semibold group-hover:text-orange-500 group-hover:bg-slate-200 py-1 rounded-md flex mx-3 px-2" href="https://alrescha79-cmd.github.io/aku/">Mini Portfolio</a>
+                            </li><hr>
+                            <li class="group my-1">
+                                <a class="font-semibold group-hover:text-orange-500 group-hover:bg-slate-200 py-1 rounded-md flex mx-3 px-2" href="https://alrescha79-cmd.github.io/cv/">Landing Page</a>
+                            <li class="group my-1">
+                                <a class="font-semibold group-hover:text-orange-500  group-hover:bg-slate-200 py-1 rounded-md flex mx-3 px-2" href="#about">Ke Bawah ↓</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- dropdown end -->
+            </div>
+        </div>
+        <div class="img relative bg-gradient-to-b from-orange-500 to-orange-400  
+        mx-auto mt-4 w-44 h-56 md:scale-105 lg:scale-150
+        rounded-t-full shadow md:pb-10 md:mt-14 lg:mt-20
+        ">
+            <img src="src/img/poto.png" alt="FOTO" class="absolute -bottom-2 rounded-b-xl">
+        </div>
+        </div>
+    </div>
+        <!-- hero end -->
+        
+        <!-- about start -->
+        <section class="pt-20 pb-36 bg-neutral-200" id="about">
+            <div class="border mx-4 border-white mt-12 rounded-lg py-5">
+        <div class="text-center text-orange-500 font-bold text-2xl md:text-3xl">Tentang Saya</div>
+        <div class="flex flex-wrap gap-2 justify-center">
+        <div class=" px-4 lg:w-[40%] mt-4 bg-white bg-opacity-20 py-2 rounded-lg w-10/12">
+        <h1 class="text-center font-semibold text-2xl md:text-3xl">Profile</h1>
+        <h1 class=" font-light mt-1">"Saya seorang mahasiswa Teknik Informatika yang sangat menyukai tentang dunia teknologi, mulai dari Smartphone, Laptop, PC hingga IOT (Internet Of Think)."</h1>
+        </div>
+        <div class="px-4 lg:w-[40%] mt-4 bg-white bg-opacity-20 py-2 rounded-lg w-10/12">
+        <h1 class="text-center font-semibold text-2xl md:text-3xl">Mari Berteman</h1>
+        <h1 class="font-light mt-1">Lebih dekat dengan kami dan lebih tau tentang kami. Jangan lupa ikuti sosial media kami.</h1>
+        <div class="justify-center mt-3 flex gap-1 mb-4">
+            <a class="flex w-9 h-9 justify-center items-center rounded-lg opacity-40 border border-orange-500 hover:opacity-100 hover:bg-orange-500 hover:text-white" href="https://www.instagram.com/alrescha79/"><box-icon type='logo' title="Instagram" name='instagram-alt' class="fill-current"></box-icon></a>
+            <a class="flex w-9 h-9 justify-center items-center rounded-lg opacity-40 border border-orange-500 hover:opacity-100 hover:bg-orange-500 hover:text-white" href="https://www.linkedin.com/in/angguncaksono"><box-icon name='linkedin-square' title="LinkedIn" type='logo' class="fill-current"></box-icon></a>
+            <a class="flex w-9 h-9 justify-center items-center rounded-lg opacity-40 border border-orange-500 hover:opacity-100 hover:bg-orange-500 hover:text-white" href="https://github.com/alrescha79-cmd"><box-icon name='github' type='logo' title="Github" class="fill-current"></box-icon></a>
+            <a class="flex w-9 h-9 justify-center items-center rounded-lg opacity-40 border border-orange-500 hover:opacity-100 hover:bg-orange-500 hover:text-white" href="https://t.me/megaBOTyt"><box-icon name='telegram' type='logo' title="Telegram" class="fill-current"></box-icon></a>
+            <a class="flex w-9 h-9 justify-center items-center rounded-lg opacity-40 border border-orange-500 hover:opacity-100 hover:bg-orange-500 hover:text-white" href="https://www.facebook.com/anggun.caksono/"><box-icon name='facebook-circle' title="Facebook" type='logo' class="fill-current"></box-icon></a>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+        <!-- about end -->
+
+
+        <!-- portfolio start -->
+    <section id="portfolio" class=" border-2 mx-4 rounded-xl my-5 border-orange-100">
+        <h1 class="text-center font-bold text-orange-500 text-2xl md:text-3xl">Portfolio</h1>
+        <h1 class="font-semibold text-center text-3xl md:text-4xl">Project Terbaru</h1>
+        <h1 class="text-center my-1">Contoh beberapa project yang telah kami kerjakan.</h1>
+
+        <div class="flex flex-wrap justify-center gap-6 my-6">
+            <!-- project 1  start-->
+            <div class="relative w-96 h-72 bg-neutral-200 rounded-xl shadow-slate-50 shadow-lg group hover:h-96 duration-200 ">
+                <div class="absolute w-[360px] h-56 bg-[#ffe4c4] rounded-md top-3 left-3 right-3 group-hover:-top-10 group-hover:scale-[0.8] duration-300 overflow-hidden bg-cover">
+                    <img src="src/img/multitools.png" alt="">
+                    
+                </div>
+                <div class="relative w-96 h-72 overflow-hidden group-hover:h-96 duration-300 box-border">
+                <div class="absolute -bottom-[150px] group-hover:bottom-6 duration-300 group-hover:bg-slate-100 group-hover:shadow-md w-[360px] left-3 h-48 rounded-md box-border">
+                    <h2 class="text-2xl font-bold text-orange-500 left-[122px] relative">Multitools</h2>
+                    <p class="p-4 block text-justify">Website multi fungsi, yang siap membantu berbagai kebutahan Anda secara mudah dan gratis.</p>
+                    <a class="text-white text-lg px-8 py-3 bg-orange-500 relative left-20 rounded-lg hover:bg-orange-800 duration-200 shadow-md" href="http://multitools.me/" target="_blank" rel="noopener noreferrer">Selengkapnya</a>
+                </div>
+            </div>
+            </div>
+            <!-- project 1 end -->
+
+            <!-- project 2 start -->
+            <div class="relative w-96 h-72 bg-slate-200 rounded-xl shadow-md group hover:h-96 duration-200 ">
+                <div class="absolute w-[360px] h-56 bg-[#008080] rounded-md top-3 left-3 right-3 group-hover:-top-10 group-hover:scale-[0.8] duration-300 overflow-hidden bg-cover">
+                    <img src="src/img/bacaqu.png" alt="">
+                    
+                </div>
+                <div class="relative w-96 h-72 overflow-hidden group-hover:h-96 duration-300 box-border">
+                <div class="absolute -bottom-[150px] group-hover:bottom-6 duration-300 group-hover:bg-slate-100 group-hover:shadow-md w-[360px] left-3 h-48 rounded-md box-border">
+                    <h2 class="text-2xl font-bold text-orange-500 left-[122px] relative">BacaQU</h2>
+                    <p class="p-4 block text-justify">Alquran berbasis web yang mudah diakses
+                        dimana saja, kapan saja dan di perangkat apa saja tanpa harus menginstall aplikasi.</p>
+                    <a class="text-white text-lg px-8 py-3 bg-orange-500 relative left-20 rounded-lg hover:bg-orange-800 duration-200 shadow-md" href="http://multitools.me/bacaqu/" target="_blank" rel="noopener noreferrer">Selengkapnya</a>
+                </div>
+            </div>
+            </div>
+            <!-- project 2 end -->
+
+            <!-- project 3 start -->
+            <div class="relative w-96 h-72 bg-slate-200 rounded-xl shadow-md group hover:h-96 duration-200 ">
+                <div class="absolute w-[360px] h-56 bg-[#9ac3e1] rounded-md top-3 left-3 right-3 group-hover:-top-10 group-hover:scale-[0.8] duration-300 overflow-hidden bg-cover">
+                    <img src="src/img/mini-portfolio.png" alt="">
+                    
+                </div>
+                <div class="relative w-96 h-72 overflow-hidden group-hover:h-96 duration-300 box-border">
+                <div class="absolute -bottom-[150px] group-hover:bottom-6 duration-300 group-hover:bg-slate-100 group-hover:shadow-md w-[360px] left-3 h-48 rounded-md box-border">
+                    <h2 class="text-2xl font-bold text-orange-500 left-[122px] relative">Mini Portfolio</h2>
+                    <p class="p-4 block text-justify">Mini Portfolio yang menggunakan desain glassmorphism. Yang berisi project dan skill.</p>
+                    <a class="text-white text-lg px-8 py-3 bg-orange-500 relative left-20 rounded-lg hover:bg-orange-800 duration-200 shadow-md" href="http://multitools.me/aku/" target="_blank" rel="noopener noreferrer">Selengkapnya</a>
+                </div>
+            </div>
+            </div>
+            <!-- project 3 end -->
+
+            <!-- project 4 start -->
+            <div class="relative w-96 h-72 bg-slate-200 rounded-xl shadow-md group hover:h-96 duration-200 ">
+                <div class="absolute w-[360px] h-56 bg-slate-50 rounded-md top-3 left-3 right-3 group-hover:-top-10 group-hover:scale-[0.8] duration-300 overflow-hidden bg-cover">
+                    <img src="src/img/kalkulator.png" alt="">
+                    
+                </div>
+                <div class="relative w-96 h-72 overflow-hidden group-hover:h-96 duration-300 box-border">
+                <div class="absolute -bottom-[150px] group-hover:bottom-6 duration-300 group-hover:bg-slate-100 group-hover:shadow-md w-[360px] left-3 h-48 rounded-md box-border">
+                    <h2 class="text-2xl font-bold text-orange-500 left-[122px] relative">kalkulator</h2>
+                    <p class="p-4 block text-justify">kalkulator online yang menggunakan desain glassmorphism agar lebih menarik.</p>
+                    <a class="text-white text-lg px-8 py-3 bg-orange-500 relative left-20 rounded-lg hover:bg-orange-800 duration-200 shadow-md" href="http://multitools.me/kalkulator/" target="_blank" rel="noopener noreferrer">Selengkapnya</a>
+                </div>
+            </div>
+            </div>
+            <!-- project 4 end -->
+
+            <!-- project 4 start -->
+            <div class="relative w-96 h-72 bg-slate-200 rounded-xl shadow-md group hover:h-96 duration-200 ">
+                <div class="absolute w-[360px] h-56 bg-slate-50 rounded-md top-3 left-3 right-3 group-hover:-top-10 group-hover:scale-[0.8] duration-300 overflow-hidden bg-cover">
+                    <img src="src/img/linkme.png" alt="">
+                    
+                </div>
+                <div class="relative w-96 h-72 overflow-hidden group-hover:h-96 duration-300 box-border">
+                <div class="absolute -bottom-[150px] group-hover:bottom-6 duration-300 group-hover:bg-slate-100 group-hover:shadow-md w-[360px] left-3 h-48 rounded-md box-border">
+                    <h2 class="text-2xl font-bold text-orange-500 left-[122px] relative">LinkMe</h2>
+                    <p class="p-4 block text-justify">Halaman yang berisi kumpulan link referensi berbagai sosial media.</p>
+                    <a class="text-white text-lg px-8 py-3 bg-orange-500 relative left-20 rounded-lg hover:bg-orange-800 duration-200 shadow-md" href="http://multitools.me/linkme/" target="_blank" rel="noopener noreferrer">Selengkapnya</a>
+                </div>
+            </div>
+            </div>
+            <!-- project 4 end -->
+        </div>
+    </section>
+        <!-- potrfolio end -->
+
+        <!-- skill start -->
+    <section id="keterampilan" class="">
+        <div class="bg-neutral-300 py-20 ">
+            <div class="border mx-4 py-5 rounded-lg mt-12">
+            <div class="text-center text-orange-500 font-bold text-2xl md:text-3xl ">Keterampilan</div>
+            <div class="text-center font-semibold my-3">Beberapa keterampilan atau skill yang kami miliki.</div>
+            <div class="flex flex-wrap gap-2 justify-center">
+                        <!-- Front End Dev Start -->
+                <div class=" px-4 lg:w-[40%] mt-4 bg-white bg-opacity-20 pb-2 pt-4 rounded-lg w-10/12">
+                    <h1 class="text-center font-bold text-lg md:text-3xl mb-4">Web Programming | Front End</h1>
+                    <div class="grid grid-rows-3 grid-flow-col gap-3 mx-auto justify-evenly my-2 md:text-xl">
+                    <h1 class="flex mb-4 text-orange-500"><box-icon type='logo' class="fill-current" name='html5'></box-icon> HTML</h1>
+                    <h1 class="flex mb-4 text-orange-500"><box-icon type='logo' class="fill-current" name='css3'></box-icon> CSS</h1>
+                    <h1 class="flex mb-4 text-orange-500"><box-icon type='logo' class="fill-current" name='javascript'></box-icon> JavaScript</h1>
+                    <h1 class="flex mb-4  text-orange-500"><box-icon type='logo' class="fill-current" name='tailwind-css'></box-icon> TailwindCss</h1>
+                    <h1 class="flex mb-4 text-orange-500"><box-icon type='logo' class="fill-current" name='bootstrap'></box-icon> Bootstrap</h1>
+                </div>
+                </div>
+                        <!-- Front End Dev End -->
+
+                        <!-- UI UX start -->
+                <div class=" px-4 lg:w-[40%] mt-4 bg-white bg-opacity-20 pb-2 pt-4 rounded-lg w-10/12">
+                    <h1 class="text-center font-semibold text-2xl md:text-3xl">Desain | UI/UX</h1>
+                    <div class="grid grid-rows-2 grid-flow-col gap-4 mx-auto justify-evenly my-4 md:text-xl">
+                <h1 class="flex mb-4 flex-grow text-orange-500 gap-3"><svg role="img" viewBox="0 0 24 24" width="24" class="fill-current mx-auto mb-1" xmlns="http://www.w3.org/2000/svg">
+                    <title>Figma</title>
+                    <path
+                        d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z" />
+                </svg>Figma</h1>
+
+                <h1 class="flex mb-4 flex-grow text-orange-500 gap-3"><svg role="img" viewBox="0 0 24 24" width="24" class="fill-current mx-auto mb-1" xmlns="http://www.w3.org/2000/svg">
+                    <title>Canva</title>
+                    <path
+                        d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zM6.962 7.68c.754 0 1.337.549 1.405 1.2.069.583-.171 1.097-.822 1.406-.343.171-.48.172-.549.069-.034-.069 0-.137.069-.206.617-.514.617-.926.548-1.508-.034-.378-.308-.618-.583-.618-1.2 0-2.914 2.674-2.674 4.629.103.754.549 1.646 1.509 1.646.308 0 .65-.103.96-.24.5-.264.799-.47 1.097-.8-.073-.885.704-2.046 1.851-2.046.515 0 .926.205.96.583.068.514-.377.582-.514.582s-.378-.034-.378-.17c-.034-.138.309-.07.275-.378-.035-.206-.24-.274-.446-.274-.72 0-1.131.994-1.029 1.611.035.275.172.549.447.549.205 0 .514-.31.617-.755.068-.308.343-.514.583-.514.102 0 .17.034.205.171v.138c-.034.137-.137.548-.102.651 0 .069.034.171.17.171.092 0 .436-.18.777-.459.117-.59.253-1.298.253-1.357.034-.24.137-.48.617-.48.103 0 .171.034.205.171v.138l-.136.617c.445-.583 1.097-.994 1.508-.994.172 0 .309.102.309.274 0 .103 0 .274-.069.446-.137.377-.309.96-.412 1.474 0 .137.035.274.207.274.171 0 .685-.206 1.096-.754l.007-.004c-.002-.068-.007-.134-.007-.202 0-.411.035-.754.104-.994.068-.274.411-.514.617-.514.103 0 .205.069.205.171 0 .035 0 .103-.034.137-.137.446-.24.857-.24 1.269 0 .24.034.582.102.788 0 .034.035.069.07.069.068 0 .548-.445.89-1.028-.308-.206-.48-.549-.48-.96 0-.72.446-1.097.858-1.097.343 0 .617.24.617.72 0 .308-.103.65-.274.96h.102a.77.77 0 0 0 .584-.24.293.293 0 0 1 .134-.117c.335-.425.83-.74 1.41-.74.48 0 .924.205.959.582.068.515-.378.618-.515.618l-.002-.002c-.138 0-.377-.035-.377-.172 0-.137.309-.068.274-.376-.034-.206-.24-.275-.446-.275-.686 0-1.13.891-1.028 1.611.034.275.171.583.445.583.206 0 .515-.308.652-.754.068-.274.343-.514.583-.514.103 0 .17.034.205.171 0 .069 0 .206-.137.652-.17.308-.171.48-.137.617.034.274.171.48.309.583.034.034.068.102.068.102 0 .069-.034.138-.137.138-.034 0-.068 0-.103-.035-.514-.205-.72-.548-.789-.891-.205.24-.445.377-.72.377-.445 0-.89-.411-.96-.926a1.609 1.609 0 0 1 .075-.649c-.203.13-.422.203-.623.203h-.17c-.447.652-.927 1.098-1.27 1.303a.896.896 0 0 1-.377.104c-.068 0-.171-.035-.205-.104-.095-.152-.156-.392-.193-.667-.481.527-1.145.805-1.453.805-.343 0-.548-.206-.582-.55v-.376c.102-.754.377-1.2.377-1.337a.074.074 0 0 0-.069-.07c-.24 0-1.028.824-1.166 1.373l-.103.445c-.068.309-.377.515-.582.515-.103 0-.172-.035-.206-.172v-.137l.046-.233c-.435.31-.87.508-1.075.508-.308 0-.48-.172-.514-.412-.206.274-.445.412-.754.412-.352 0-.696-.24-.862-.593-.244.275-.523.553-.852.764-.48.309-1.028.549-1.68.549-.582 0-1.097-.309-1.371-.583-.412-.377-.651-.96-.686-1.509-.205-1.68.823-3.84 2.4-4.8.378-.205.755-.343 1.132-.343zm9.77 3.291c-.104 0-.172.172-.172.343 0 .274.137.583.309.755a1.74 1.74 0 0 0 .102-.583c0-.343-.137-.515-.24-.515z" />
+                </svg>Canva</h1>
+                <h1 class="flex mb-4 flex-grow text-orange-500 gap-3"><svg role="img" viewBox="0 0 24 24" width="24" class="fill-current"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title>Adobe XD</title>
+                        <path
+                            d="M18.835.3H5.165A5.165 5.165 0 0 0 0 5.465v13.07A5.165 5.165 0 0 0 5.165 23.7h13.67A5.165 5.165 0 0 0 24 18.535V5.465A5.165 5.165 0 0 0 18.835.3zm-6.106 16.491h-2.287c-.16 0-.274-.006-.338-.113-.215-.419-.43-.835-.644-1.248a45.137 45.137 0 0 0-.684-1.264 66.961 66.961 0 0 1-.717-1.305h-.016a52.7 52.7 0 0 1-.668 1.288c-.23.429-.459.856-.684 1.28A54.85 54.85 0 0 1 6 16.693c-.044.097-.119.107-.227.107H3.568c-.043 0-.067.017-.072-.026a.166.166 0 0 1 .024-.113l3.107-5.105L3.6 6.438c-.033-.043-.038-.078-.016-.107a.115.115 0 0 1 .097-.04h2.27a.36.36 0 0 1 .145.024.292.292 0 0 1 .096.089c.193.43.408.859.644 1.288.236.429.475.853.716 1.272.241.419.464.843.668 1.272h.016c.213-.44.43-.869.652-1.288.222-.419.447-.84.676-1.264.231-.425.453-.847.668-1.264a.246.246 0 0 1 .064-.106.239.239 0 0 1 .129-.024h2.109a.093.093 0 0 1 .112.067.093.093 0 0 1-.031.094l.001.004-2.995 4.943 3.204 5.249c.021.037.026.08.016.121-.01.036-.047.012-.112.023zm7.681-.42a8.02 8.02 0 0 1-1.626.483 8.63 8.63 0 0 1-1.547.145 5.006 5.006 0 0 1-2.149-.45 3.421 3.421 0 0 1-1.506-1.361 4.348 4.348 0 0 1-.548-2.278 4.202 4.202 0 0 1 .548-2.109 4.018 4.018 0 0 1 1.595-1.545 5.139 5.139 0 0 1 2.737-.572c.086.005.188.013.306.024V5.536c0-.075.032-.113.097-.113h2.028a.086.086 0 0 1 .097.073.096.096 0 0 1 0 .024v9.517c0 .183.008.381.024.596.016.214.03.407.04.579a.163.163 0 0 1-.096.159zm-2.457-5.812c.09.009.179.025.266.048v4.395a1.634 1.634 0 0 1-.354.064 4.965 4.965 0 0 1-.419.016 2.656 2.656 0 0 1-.83-.129 1.714 1.714 0 0 1-.676-.402 1.973 1.973 0 0 1-.451-.708 2.83 2.83 0 0 1-.169-1.031 2.217 2.217 0 0 1 .33-1.272c.213-.316.504-.571.845-.741.35-.173.736-.262 1.127-.258.111.002.221.007.331.018z" />
+                    </svg>Adobe XD</h1>
+                <h1 class="flex mb-4 flex-grow text-orange-500 gap-3"><svg role="img" viewBox="0 0 24 24" width="24" class="fill-current mx-auto mb-1" xmlns="http://www.w3.org/2000/svg">
+                    <title>Adobe Photoshop</title>
+                    <path
+                        d="M9.85 8.42c-.37-.15-.77-.21-1.18-.2-.26 0-.49 0-.68.01-.2-.01-.34 0-.41.01v3.36c.14.01.27.02.39.02h.53c.39 0 .78-.06 1.15-.18.32-.09.6-.28.82-.53.21-.25.31-.59.31-1.03.01-.31-.07-.62-.23-.89-.17-.26-.41-.46-.7-.57zM19.75.3H4.25C1.9.3 0 2.2 0 4.55v14.899c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zm-7.391 11.65c-.399.56-.959.98-1.609 1.22-.68.25-1.43.34-2.25.34-.24 0-.4 0-.5-.01s-.24-.01-.43-.01v3.209c.01.07-.04.131-.11.141H5.52c-.08 0-.12-.041-.12-.131V6.42c0-.07.03-.11.1-.11.17 0 .33 0 .56-.01.24-.01.49-.01.76-.02s.56-.01.87-.02c.31-.01.61-.01.91-.01.82 0 1.5.1 2.06.31.5.17.96.45 1.34.82.32.32.57.71.73 1.14.149.42.229.85.229 1.3.001.86-.199 1.57-.6 2.13zm7.091 3.89c-.28.4-.671.709-1.12.891-.49.209-1.09.318-1.811.318-.459 0-.91-.039-1.359-.129-.35-.061-.7-.17-1.02-.32-.07-.039-.121-.109-.111-.189v-1.74c0-.029.011-.07.041-.09.029-.02.06-.01.09.01.39.23.8.391 1.24.49.379.1.779.15 1.18.15.38 0 .65-.051.83-.141.16-.07.27-.24.27-.42 0-.141-.08-.27-.24-.4-.16-.129-.489-.279-.979-.471-.51-.18-.979-.42-1.42-.719-.31-.221-.569-.51-.761-.85-.159-.32-.239-.67-.229-1.021 0-.43.12-.84.341-1.21.25-.4.619-.72 1.049-.92.469-.239 1.059-.349 1.769-.349.41 0 .83.03 1.24.09.3.04.59.12.86.23.039.01.08.05.1.09.01.04.02.08.02.12v1.63c0 .04-.02.08-.05.1-.09.02-.14.02-.18 0-.3-.16-.62-.27-.96-.34-.37-.08-.74-.13-1.12-.13-.2-.01-.41.02-.601.07-.129.03-.24.1-.31.2-.05.08-.08.18-.08.27s.04.18.101.26c.09.11.209.2.34.27.229.12.47.23.709.33.541.18 1.061.43 1.541.73.33.209.6.49.789.83.16.318.24.67.23 1.029.011.471-.129.94-.389 1.331z" />
+                </svg>Photoshop</h1>
+            </div>
+                </div>
+                        <!-- UI UX end -->
+
+                        <!-- Office start -->
+                <div class=" px-4 lg:w-[40%] mt-4 bg-white bg-opacity-20 pb-2 pt-4 rounded-lg w-10/12">
+                    <h1 class="text-center font-semibold text-2xl md:text-3xl">Office</h1>
+                    <div class="grid grid-rows-2 grid-flow-col gap-4 mx-auto justify-evenly my-4 text-sm md:text-base">
+                <h1 class="flex mb-4  flex-grow text-orange-500 gap-3"><svg role="img" class="fill-current" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Microsoft Word</title>
+                    <path
+                        d="M23.004 1.5q.41 0 .703.293t.293.703v19.008q0 .41-.293.703t-.703.293H6.996q-.41 0-.703-.293T6 21.504V18H.996q-.41 0-.703-.293T0 17.004V6.996q0-.41.293-.703T.996 6H6V2.496q0-.41.293-.703t.703-.293zM6.035 11.203l1.442 4.735h1.64l1.57-7.876H9.036l-.937 4.653-1.325-4.5H5.38l-1.406 4.523-.938-4.675H1.312l1.57 7.874h1.641zM22.5 21v-3h-15v3zm0-4.5v-3.75H12v3.75zm0-5.25V7.5H12v3.75zm0-5.25V3h-15v3Z" />
+                </svg>Microsoft Word</h1>
+                <h1 class="flex mb-4 flex-grow text-orange-500 gap-3"><svg role="img" class="fill-current" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Microsoft Excel</title>
+                    <path
+                        d="M23 1.5q.41 0 .7.3.3.29.3.7v19q0 .41-.3.7-.29.3-.7.3H7q-.41 0-.7-.3-.3-.29-.3-.7V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h5V2.5q0-.41.3-.7.29-.3.7-.3zM6 13.28l1.42 2.66h2.14l-2.38-3.87 2.34-3.8H7.46l-1.3 2.4-.05.08-.04.09-.64-1.28-.66-1.29H2.59l2.27 3.82-2.48 3.85h2.16zM14.25 21v-3H7.5v3zm0-4.5v-3.75H12v3.75zm0-5.25V7.5H12v3.75zm0-5.25V3H7.5v3zm8.25 15v-3h-6.75v3zm0-4.5v-3.75h-6.75v3.75zm0-5.25V7.5h-6.75v3.75zm0-5.25V3h-6.75v3Z" />
+                </svg>Microsoft Excel</h1>
+                <h1 class="flex mb-4 flex-grow text-orange-500 gap-3"><svg role="img" class="fill-current" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Microsoft PowerPoint</title>
+                    <path
+                        d="M13.5 1.5q1.453 0 2.795.375 1.342.375 2.508 1.06 1.166.686 2.12 1.641.956.955 1.641 2.121.686 1.166 1.061 2.508Q24 10.547 24 12q0 1.453-.375 2.795-.375 1.342-1.06 2.508-.686 1.166-1.641 2.12-.955.956-2.121 1.641-1.166.686-2.508 1.061-1.342.375-2.795.375-1.29 0-2.52-.305-1.23-.304-2.337-.884-1.108-.58-2.063-1.418-.955-.838-1.693-1.893H.997q-.411 0-.704-.293T0 17.004V6.996q0-.41.293-.703T.996 6h3.89q.739-1.055 1.694-1.893.955-.837 2.063-1.418 1.107-.58 2.337-.884Q12.21 1.5 13.5 1.5zm.75 1.535v8.215h8.215q-.14-1.64-.826-3.076-.686-1.436-1.782-2.531-1.095-1.096-2.537-1.782-1.441-.685-3.07-.826zm-5.262 7.57q0-.68-.228-1.166-.229-.486-.627-.79-.399-.305-.938-.446-.539-.14-1.172-.14H2.848v7.863h1.84v-2.742H5.93q.574 0 1.119-.17t.978-.493q.434-.322.698-.802.263-.48.263-1.114zM13.5 21q1.172 0 2.262-.287t2.056-.82q.967-.534 1.776-1.278.808-.744 1.418-1.664.61-.92.984-1.986.375-1.067.469-2.227h-9.703V3.035q-1.735.14-3.27.908T6.797 6h4.207q.41 0 .703.293t.293.703v10.008q0 .41-.293.703t-.703.293H6.797q.644.715 1.412 1.271.768.557 1.623.944.855.387 1.781.586Q12.54 21 13.5 21zM5.812 9.598q.575 0 .915.228.34.229.34.838 0 .27-.124.44-.123.17-.31.275-.188.105-.422.146-.234.041-.445.041H4.687V9.598Z" />
+                </svg>Microsoft PowerPoint</h1>
+            </div>
+                </div>
+                        <!-- office end -->
+            </div>
+            </div>
+        </div>
+    </section>
+        <!-- skill end -->
+    </div>
+
+
+<!-- Contact Section Start -->
+<section id="contact" class="pt-36 pb-32 bg-slate-300">
+    <div class="container">
+        <div class="w-full px-4">
+            <div class="mx-auto mb-16 max-w-xl ">
+                <h4 class="mb-2 text-lg font-semibold text-center">Kontak</h4>
+                <h2 class="mb-4 text-3xl font-bold text-orange-500 sm:text-4xl lg:text-5xl text-center">Hubungi Kami</h2>
+                <p class="text-md font-medium text-secondary md:text-lg mb-4 lg:text-center">Di manapun Anda berada, kami siap untuk membantu Anda. Hubungi kami melalui Email, Telegram atau Pesan langsung di bawah ini.</p>
+                    <div class="flex justify-center gap-3 md:gap-8 lg:gap-10 text-center">
+                    <a class="text-orange-500 border border-orange-500 rounded-md px-4 pt-2 md:scale-125 hover:bg-orange-500 hover:text-white w-28" href="mailto:25alrescha@gmail.com">
+                        <box-icon name='envelope' title="Email" class="fill-current block mx-auto" type='logo'></box-icon>Email
+                    </a>
+                    <a class="text-orange-500 border border-orange-500 rounded-md px-4 pt-2 md:scale-125 hover:bg-orange-500 hover:text-white w-28"
+                        href="https://t.me/megaBOTyt">
+                        <box-icon name='telegram' title="Telegram" type='logo' class="fill-current block mx-auto"></box-icon>Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+            <h1 class="font-semibold mb-3 text-lg lg:w-1/2 mx-auto text-orange-500">Pesan Langsung </h1>
+            <div class="w-full lg:mx-auto lg:w-1/2 border py-5 rounded-lg">
+                <div class="mb-3 w-full px-4 relative pb-6  overflow-hidden">
+                    <form name="submit-to-google-sheet">
+                    <label for="name" class="text-base font-bold text-orange-500">Nama</label>
+                    <input type="text" id="name"  placeholder="Nama Lengkap" name="nama"
+                        class="w-full rounded-md bg-slate-200 p-3 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 peer"/>
+                        <p class="absolute z-10 bottom-0 delay-150 transition-all peer-placeholder-shown:-top-10 peer-placeholder-shown:-z-10 duration-500 opacity-50 text-sm">Nama Lengkap</p>
+                </div> 
+
+                <div class="mb-4 w-full px-4">
+                    <label for="email" class="text-base font-bold text-orange-500">Email</label>
+                    <input type="email" id="email"  placeholder="nama@email.com" name="email"
+                        class="w-full rounded-md bg-slate-200 peer p-3  focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500" />
+                        <p class="invisible peer-invalid:visible text-red-600 text-sm mt-[2px]">Masukkan email yang valid</p>
+                </div>
+
+                <div class="mb-8 w-full px-4 pb-4 relative overflow-hidden">
+                    <label for="message" class="text-base font-bold text-orange-500">Pesan</label>
+                    <textarea type="email" id="email" placeholder="Pesan Anda" name="pesan"
+                        class="h-32 w-full rounded-md bg-slate-200 p-3 peer focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500"></textarea>
+                        <p class="absolute z-10 bottom-0 delay-150 transition-all peer-placeholder-shown:-top-10 peer-placeholder-shown:-z-10 duration-500 opacity-50 text-sm">Masukkan pesan Anda</p>
+                </div>
+
+                <div class="w-full px-4 relative ">
+                    <h1 class="alert-gagal text-red-700 text-sm mb-1 hidden"><strong>*</strong> Maaf pesan Anda gagal terkirim. Coba lagi!</h1>
+                    <!-- alert terkirim -->
+                    <div class="w-full px-4 mt-8 my-alert hidden">
+                        <div class=" bg-neutral-200 rounded-lg px-4 py-5 mb-3 text-base text-green-700 flex items-center w-full"
+                            role="alert">
+                            <p class="w-11/12"><strong class="mr-1">Terimakasih! </strong> Pesan Anda sudah Terkirim.</p>
+                            <button type="button" class="btn-close text-5xl text-red-600 hover:text-orange-500 w-1/12">×</button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-kirim w-full rounded-lg bg-orange-500 py-3 px-8 text-base font-semibold text-white transition duration-300 hover:bg-orange-700 hover:shadow-lg">Kirim</button>
+
+                    <div class="invisible w-11/12 justify-center rounded-lg bg-orange-500 py-3  text-base font-semibold text-white bottom-0 left-3 md:left-6 btn-loading cursor-none absolute flex"><span class=" block h-4 w-4 border-t-4 border-l-4 border-b-4 border-r-4 border-r-transparent rounded-full animate-spin mt-1 mr-3"></span>Mengirim...
+                    </div>
+                </div>
+            </div>
+            </div>
+        </form>
+</section>
+<!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-neutral-500 pt-24 pb-6">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
+                    <h2 class="mb-5 text-2xl font-bold text-orange-500">ANGGUN CAKSONO</h2>
+                    <h3 class="mb-2 text-2xl font-bold">Hubungi Kami</h3>
+                    <a class="flex hover:text-orange-500 gap-1" href="mailto:25alrescha@gmail.com"><box-icon name='envelope' class="fill-current" type='logo'></box-icon>25alrescha@gmail.com</a>
+                    <p>Ngrejeng, Grabagan 62373</p>
+                    <p>Tuban</p>
+
+                </div>
+                <div class="mb-12 w-full px-4 md:w-1/3">
+                    <h3 class="mb-5 text-xl font-semibold text-orange-500">Lainnya</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="https://alrescha79-cmd.github.io/aku/" class="mb-3 inline-block text-base hover:text-orange-500">Mini Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="https://alrescha79-cmd.github.io/cv/" class="mb-3 inline-block text-base hover:text-orange-500">Landing Page </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-12 w-full px-4 md:w-1/3">
+                    <h3 class="mb-5 text-xl font-semibold text-orange-500">Tautan</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#home" class="mb-3 inline-block text-base hover:text-orange-500">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="mb-3 inline-block text-base hover:text-orange-500">Tentang Saya</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="mb-3 inline-block text-base hover:text-orange-500">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#keterampilan" class="mb-3 inline-block text-base hover:text-orange-500">Keterampilan</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#blog" class="mb-3 inline-block text-base hover:text-orange-500">Blog</a>
+                        </li> -->
+                        <li>
+                            <a href="#contact" class="mb-3 inline-block text-base hover:text-orange-500">Hubungi Saya</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+        <div class="w-full border-t border-slate-700 bg-neutral-600 pt-10 pb-10 border-b">
+            <h1 class="text-center mb-3 text-neutral-300">Follow Me</h1>
+            <div class="mb-5 flex items-center gap-2 justify-center">
+                    <a class="flex w-9 h-9 justify-center items-center rounded-lg opacity-40 border border-orange-500 hover:opacity-100 hover:bg-orange-500 hover:text-white"
+                        href="https://www.instagram.com/alrescha79/">
+                        <box-icon type='logo' title="Instagram" name='instagram-alt' class="fill-current"></box-icon>
+                    </a>
+                    <a class="flex w-9 h-9 justify-center items-center rounded-lg opacity-40 border border-orange-500 hover:opacity-100 hover:bg-orange-500 hover:text-white"
+                        href="https://www.linkedin.com/in/angguncaksono">
+                        <box-icon name='linkedin-square' title="LinkedIn" type='logo' class="fill-current"></box-icon>
+                    </a>
+                    <a class="flex w-9 h-9 justify-center items-center rounded-lg opacity-40 border border-orange-500 hover:opacity-100 hover:bg-orange-500 hover:text-white"
+                        href="https://github.com/alrescha79-cmd">
+                        <box-icon name='github' type='logo' title="Github" class="fill-current"></box-icon>
+                    </a>
+                    <a class="flex w-9 h-9 justify-center items-center rounded-lg opacity-40 border border-orange-500 hover:opacity-100 hover:bg-orange-500 hover:text-white"
+                        href="https://t.me/megaBOTyt">
+                        <box-icon name='telegram' type='logo' title="Telegram" class="fill-current"></box-icon>
+                    </a>
+                    <a class="flex w-9 h-9 justify-center items-center rounded-lg opacity-40 border border-orange-500 hover:opacity-100 hover:bg-orange-500 hover:text-white"
+                        href="https://www.facebook.com/anggun.caksono/">
+                        <box-icon name='facebook-circle' title="Facebook" type='logo' class="fill-current"></box-icon>
+                    </a>
+            </div>
+            <p class="text-center text-xs font-medium text-neutral-100 opacity-70">
+                     Anggun Caksono. All rigths reserved © 2022
+            </p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+<!-- Back to top Start -->
+<a href="#home"
+    class="fixed bottom-8 right-5 z-[9999] hidden h-10 w-10 items-center ring-1 ring-white justify-center rounded-full bg-orange-500 p-4 hover:animate-pulse md:scale-125 lg:scale-150"
+    id="to-top">
+    <span class="mt-1 block h-2 w-2 rotate-45 border-t-2 border-l-2"></span>
+</a>
+<!-- Back to top End -->
+
+    <script src="script.js"></script>
+</body>
+</html>
